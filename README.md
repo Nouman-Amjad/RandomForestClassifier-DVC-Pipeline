@@ -68,7 +68,7 @@ train:
   seed: 20170428
   n_est: 50
   min_split: 0.1
-
+```
 ## Installation and Usage
 ### Prerequisites
 - Python 3.8 or later
@@ -80,25 +80,25 @@ train:
 ```bash
 git clone https://github.com/your-username/RandomForestClassifier-DVC-Pipeline.git
 cd RandomForestClassifier-DVC-Pipeline
-
+```
 2. Install Dependencies:
 ```bash
 pip install -r requirements.txt
-
+```
 3. Reproduce the Pipeline:
 ```bash
 dvc repro
-
+```
 4. Run Specific Stages:
 - Run only the **train** stage:
 ```bash
 dvc repro train
-
+```
 5. Visualize Metrics and Plots:
 ```bash
 dvc metrics show
 dvc plots show eval/plots/images
-
+```
 ## File Structure
 
 - `dvc.yaml`: Defines pipeline stages and dependencies.
